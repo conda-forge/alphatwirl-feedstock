@@ -1,5 +1,5 @@
 {% set name = "alphatwirl" %}
-{% set version = "0.24.0" %}
+{% set version = "0.24.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e5f8eea215c05b3e2224cbe356810d17f26ed0029dc1a91ebb50d84d33c5ff9c
+  sha256: a5ca7e2a798a04c988aca71274c9dddf377c11d6ddfa57360108f1a9232468c0
 
 build:
   noarch: python
