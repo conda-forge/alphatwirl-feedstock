@@ -1,5 +1,5 @@
 {% set name = "alphatwirl" %}
-{% set version = "0.24.1" %}
+{% set version = "0.25.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a5ca7e2a798a04c988aca71274c9dddf377c11d6ddfa57360108f1a9232468c0
+  sha256: 1a3b9b4fab6158a68523df23319387fce09fe63bec67516c608feb124df9fd23
 
 build:
   noarch: python
@@ -21,8 +21,8 @@ requirements:
   run:
     - python
     - numpy
-    - atpbar >=1.0.2
-    - mantichora >=0.9.3
+    - atpbar >=1.0.3
+    - mantichora >=0.9.5
 
 test:
   imports:
