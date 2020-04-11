@@ -1,5 +1,5 @@
 {% set name = "alphatwirl" %}
-{% set version = "0.25.5" %}
+{% set version = "0.30.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 17546a60a1594949bcb04190ded482471617df90f9f45b01c8b1124bbc0c9185
+  sha256: 6ff0d87fa7c11fdf9655d8647b175dd31c5935b673a2b43959163396213062ba
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -33,7 +33,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'A library for summarizing event data'
+  summary: A library for summarizing event data
   description: |
     AlphaTwirl is a Python library that summarizes event data into
     multivariate categorical data as data frames.
